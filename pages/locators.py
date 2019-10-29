@@ -10,6 +10,9 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_BASKET = (By.CSS_SELECTOR,".btn-add-to-basket")
-    ARRAY_MESSAGE = (By.CSS_SELECTOR, ".alertinner  strong")
+    ARRAY_MESSAGE = (By.CSS_SELECTOR, ".alertinner strong")
     PROD_NAME = (By.CSS_SELECTOR, ".col-sm-6.product_main > h1") #фактическое название товара
     PROD_PRICE = (By.CSS_SELECTOR, "p.price_color") #фактическая цена товара
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR,".alert:nth-child(1)>div") 
+    #.alert-success >  .alertinner:nth-child(1) 
+    
