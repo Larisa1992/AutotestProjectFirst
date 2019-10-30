@@ -20,3 +20,9 @@ class ProductPage(BasePage):
     def is_right_price(self, prod_price):
         #print("prod_price " , prod_price)
         assert self.browser.find_elements(*ProductPageLocators.ARRAY_MESSAGE)[2].text == prod_price, "Price is not right"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_elements_present(*ProductPageLocators.SUCCESS_MESSAGE)[0], \
+            "Success message is presented, but should not be"
+
+            
