@@ -1,5 +1,6 @@
 from pages.base_page import BasePage
 from .locators import ProductPageLocators
+from selenium.webdriver.support.ui import WebDriverWait
 
 class ProductPage(BasePage):
 
