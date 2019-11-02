@@ -2,7 +2,6 @@ from pages.main_page import MainPage
 from pages.login_page import LoginPage
 from pages.basket_page import BasketPage
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 import pytest
 
 @pytest.mark.login_guest
